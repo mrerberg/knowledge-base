@@ -1,4 +1,4 @@
-Links:
+# Links
 
 - [HowProgrammingWorks/LinkedList](https://github.com/HowProgrammingWorks/LinkedList)
 
@@ -23,4 +23,4 @@ Links:
 - [ ] .indexOf(data):Number
 - [ ] .includes(data):Boolean
 - [ ] .map(item => f(item)):list
-другие методы
+      другие методы
