@@ -12,8 +12,6 @@ class Dictionary {
     #values;
 
     constructor() {
-        // Objects could have only string keys
-        // and use Map to implement map sounds weird
         this.#keys = [];
         this.#values = [];
     }
