@@ -1,6 +1,6 @@
 'use strict';
 
-// https://github.com/HowProgrammingWorks/Composition/blob/master/Exercises.ru.md
+// Task: https://github.com/HowProgrammingWorks/Composition/blob/master/Exercises.ru.md
 
 const compose = (...args) => {
     const handlers = [];
