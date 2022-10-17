@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * WeakSet
@@ -12,16 +12,16 @@
  */
 
 const cities = new Set([
-  { name: "Beijing" },
-  { name: "Kiev" },
-  { name: "London" },
-  { name: "Baghdad" },
+  { name: 'Beijing' },
+  { name: 'Kiev' },
+  { name: 'London' },
+  { name: 'Baghdad' },
 ]);
 
 const list = new WeakSet();
 
 for (const city of cities) {
-  console.log("Add city", city, "to WeakSet");
+  console.log('Add city', city, 'to WeakSet');
   list.add(city);
 }
 
@@ -30,15 +30,15 @@ console.log({ cities, list });
 const iterator = cities.values();
 
 const beijing = iterator.next().value;
-console.log("select", beijing);
+console.log('select', beijing);
 
 iterator.next();
 
 const london = iterator.next().value;
-console.log("select", london);
+console.log('select', london);
 
 cities.delete(london);
-console.log("remove", london, "from Set");
+console.log('remove', london, 'from Set');
 
 
 /**
@@ -47,8 +47,8 @@ console.log("remove", london, "from Set");
  * так как любая проверка приводит к сохранению ссылки от GarbageCollector
 */
 list.delete(beijing);
-console.log("remove", beijing, "from WeakSet");
+console.log('remove', beijing, 'from WeakSet');
 
 for (const city of cities) {
-  console.log("City", city, "in WeakSet", list.has(city));
+  console.log('City', city, 'in WeakSet', list.has(city));
 }
