@@ -48,7 +48,7 @@ class Dictionary {
         this.#keys = [];
         this.#values = [];
     }
-    // TODO: iterator MDN
+
     keys() {
         return this.#keys.slice();
     }
