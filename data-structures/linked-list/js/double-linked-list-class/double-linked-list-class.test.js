@@ -3,7 +3,7 @@
 const { describe, it, expect } = require('@jest/globals');
 const { DoubleLinkedList } = require('./double-linked-list-class');
 
-describe('DoubleLinkedList class', () => {
+describe('DoubleLinkedList', () => {
     describe('fromArray()', () => {
         it('should create list elements from array elements', () => {
             const list = new DoubleLinkedList();
