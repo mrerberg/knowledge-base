@@ -1,6 +1,5 @@
 'use strict';
 
-const { describe, it, expect } = require('@jest/globals');
 const { Dictionary } = require('./object');
 
 describe('Dictionary', () => {
