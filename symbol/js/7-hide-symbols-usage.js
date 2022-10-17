@@ -1,5 +1,7 @@
 'use strict';
 
+// TODO: Разобраться с примерами
+
 const hideSymbol = require('./7-hide-symbols.js');
 
 let obj = {
