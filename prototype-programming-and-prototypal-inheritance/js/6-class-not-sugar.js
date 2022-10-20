@@ -6,9 +6,9 @@ class Point {
 
     constructor(x, y) {
         this.#x = x;
-        this.#y = y;
-
         this.x = x;
+
+        this.#y = y;
         this.y = y;
     }
 
@@ -37,6 +37,7 @@ point.move(2, 3);
 
 // Error: Parsing error: Private field '#x' must be declared in an enclosing class
 // console.log(point.#x);
+console.log(point.x);
 
 // Error: Parsing error: Private field '#log' must be declared in an enclosing class
 // console.log(point.#log());
